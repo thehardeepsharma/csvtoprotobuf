@@ -1,0 +1,50 @@
+
+
+syntax = "proto3";
+
+package accelerators;
+
+message Resource {
+    int32 id = 1;
+    repeated Entry entry = 2;
+}
+
+message Entry {
+	string link = 1;
+	string dataset = 2;
+	string table = 3;
+	string env = 4;
+	
+	Platform platform = 5;
+
+	string field_name1 = 6;
+	string dimension1 = 7;
+	string field_name2 = 8;
+	string dimension2 = 9;
+	string field_name3 = 10;
+	string dimension3 = 11;
+	string field_name4 = 12;
+	string dimension4 = 13;
+	string field_name5 = 14;
+	string dimension5 = 15;
+	string field_name6 = 16;
+	string dimension6 = 17;
+	string field_name7 = 18;
+	string dimension7 = 19;
+	string field_name8 = 20;
+	string dimension8 = 21;
+	string field_name9 = 22;
+	string dimension9 = 23;
+	string field_name10 = 24;
+	string dimension10 = 25;
+
+	string fa_hierarchy = 26;
+	string scop = 27;
+	string validation = 28;
+}
+
+enum Platform {
+	UNKNOWN = 0;
+	PLX = 1;
+	BQ = 2;
+}
